@@ -14,6 +14,8 @@ sudo yum install java-1.8.0-openjdk-devel
 5. sudo service jenkins start
 6. sudo cat pathoffilewherepasswordinluded
 7. reference (https://www.youtube.com/watch?v=hVhkuoUBDWY)
+8. It should work on port 8080. Otherwise try sudo yum update, sudo yum install java
+9. Entering Jenkins without credentials https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-reset-jenkins-admin-users-password/
 
 # Tomcat installation
 follow https://www.youtube.com/watch?v=68WNroQBUts
