@@ -8,6 +8,12 @@ Add Custom TCP with port(8080) into inbound security group
 2. sudo amazon-linux-extras install java-openjdk11
 3. sudo alternatives --config java
 
+# Maven installation
+1. sudo wget https://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+2. sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
+3. sudo yum install -y apache-maven
+4. Reference: https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth-connect-prerq.html
+
 # Jenkins installation
 1. sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
 2. sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
@@ -25,3 +31,6 @@ https://github.com/yankils/Simple-DevOps-Project/blob/master/Tomcat/tomcat_insta
 
 # CI CD process
 https://www.youtube.com/watch?v=1jsKGhXmm4c
+
+# Jenkins and AWS EC2 Connection Over SSH
+https://www.youtube.com/watch?v=s7FtPa2sD2s
