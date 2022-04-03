@@ -5,6 +5,8 @@ Add Custom TCP with port(8080) into inbound security group
 
 # Java installation
 sudo yum install java-1.8.0-openjdk-devel
+sudo amazon-linux-extras install java-openjdk11
+sudo alternatives --config java
 
 # Jenkins installation
 1. sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo
